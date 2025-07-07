@@ -36,8 +36,5 @@ class Program
         Console.WriteLine($"The sum is {totalSum}");
         Console.WriteLine($"The average is {avg.ToString("F2")}");
         Console.WriteLine($"The Largest number is {maxNum}");
-
-
-
     }
 }
