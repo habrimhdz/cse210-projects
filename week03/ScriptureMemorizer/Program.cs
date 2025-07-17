@@ -1,3 +1,5 @@
+//The program will recognize the quit action regardless of lowercas or uppercase. It counts the unhidden words, and the GetReferenceText method is prepared to deal with user, verse requests in the hypothetical cas that this program accepts user inputs for specific scriptures.
+
 using System;
 
 class Program
