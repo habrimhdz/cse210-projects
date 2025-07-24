@@ -6,7 +6,6 @@ public class Video
 {
     private string _videoTitle;
     private string _author;
-    private int _numOfComments;
     private int _seconds;
     private List<Comment> _commentList = new List<Comment>();
     List<Video> videos = new List<Video>();

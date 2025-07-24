@@ -5,5 +5,31 @@ using System;
 //(with newline characters where appropriate)
 public class Address
 {
+    private string _street;
+    private string _city;
+    private string _stateProvince;
+    private string _country;
 
+    public Address(string street, string city, string stateProvince, string country)
+    {
+        _street = street;
+        _city = city;
+        _stateProvince = stateProvince;
+        _country = country;
+
+    }
+
+    public bool UsaOrNot(string country)
+    {
+        return country == "USA";
+    }
+
+    public string FullAddress()
+    {
+        string singleAddress = $"{_street}\n{_city}, {_stateProvince}\n{_country}";
+        return singleAddress;
+    }
+
+    public string Country => _country;
 }
+

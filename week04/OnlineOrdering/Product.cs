@@ -5,4 +5,30 @@ using System;//No user interaction, set the values yourself.
 public class Product
 {
 
-}
+    private string _productName;
+    private int _productId;
+    private double _price;
+    private int _quantity;
+
+    public Product(string productName, int productId, double price, int quantity)
+    {
+        _productName = productName;
+        _productId = productId;
+        _price = price;
+        _quantity = quantity;
+    }
+
+    public double ProductCost()
+    {
+        double total = _price * _quantity;
+        return total;
+    }
+
+    public string productName => _productName;
+    public int productId => _productId;
+    public double price => _price;
+
+    public int quantity => _quantity;
+
+
+   }
