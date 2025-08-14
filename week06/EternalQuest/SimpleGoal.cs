@@ -22,6 +22,6 @@ public class SimpleGoal : Goal
 
     public override string GetStringRepresentation()
     {
-        return $"{GetDetailsString()}\nStatus: {(_isComplete ? "Complete" : "Incomplete")}";
+        return $"Goal Type: Simple Goal\n{GetDetailsString()}\nStatus: {(_isComplete ? "Complete" : "Incomplete")}\n";
     }
 }

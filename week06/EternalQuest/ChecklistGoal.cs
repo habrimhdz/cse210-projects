@@ -16,9 +16,9 @@ public class ChecklistGoal : Goal
 
     public override void RecordEvent()
     {
-        
-            _amountCompleted++;
-        
+
+        _amountCompleted++;
+
     }
     public override bool IsComplete()
     {
@@ -26,6 +26,17 @@ public class ChecklistGoal : Goal
     }
     public override string GetStringRepresentation()
     {
-        return $"{GetDetailsString()}\nStatus: {(_amountCompleted >= _target ? "Complete" : "Incomplete")}\nAmount Completed: {_amountCompleted}/{_target}\nBonus Points: {_bonus}";
+        return $"Goal Type: Checklist Goal\n{GetDetailsString()}\nStatus: {(_amountCompleted >= _target ? "Complete" : "Incomplete")}\nAmount Completed: {_amountCompleted}/{_target}\nBonus Points: {_bonus}\n";
     }
+
+    public void SetAmountCompleted(int amount)
+    {
+        _amountCompleted = amount;
+    }
+
+public int BonusPoints
+{
+    get { return _bonus; }
+}
+
 }

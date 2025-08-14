@@ -17,7 +17,6 @@ public class EternalGoal : Goal
     }
     public override string GetStringRepresentation()
     {
-        // Eternal goals do not change state, so we can return a simple representation.
-        return $"{GetDetailsString()}\nStatus: Eternal (never complete)";
+        return $"Goal Type: Eternal Goal\n{GetDetailsString()}\n";
     }
 }
